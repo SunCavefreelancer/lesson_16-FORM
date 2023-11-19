@@ -1,0 +1,127 @@
+/*=======Підключення шрифтів=======*/
+@import url("fonts.css");
+
+/*=======Скидання стилів=======*/
+@import url("reset.css");
+
+
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	/* прижимаем футер книзу */
+	flex-direction: column;
+	/* прижимаем футер книзу */
+}
+
+.wrapper>main {
+	flex-grow: 1;
+	/* прижимаем футер книзу */
+}
+
+
+
+/* для усіх "__container" однаково */
+[class*="__container"] {
+    max-width: 1250px; /* получилось */
+    margin: 0 auto; /* получилось */
+    padding: 0px 15px; /* получилось */
+}
+
+/* ---header---- */
+.header {}
+
+/* ---main---- */
+.main {}
+
+
+/* -------page1----- */
+.page1 {
+	padding: 50px 0px 0px 0px;
+	margin: 0 auto;
+	text-align: center; /* для усього блоку с текстом */
+}
+
+.page1__container {}
+
+.page1__title::before {
+	width: 12px;
+	height: 12px;
+	margin-right: 6px;
+	background-color: #40DDB6;
+	content: '';
+	display: inline-block;
+}
+.page1__title {
+	color: #37393F;
+	font-family: 'Inter';
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 16px;
+}
+
+.page1__sub-title {
+	color: #37393F;
+	font-family: 'Poppins';
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 121%; /* 48.4px */
+	margin-bottom: 40px;
+}
+
+/* -------form------- */
+.form {
+}
+.form1 {
+	display: flex;
+}
+.form1__line {
+
+}
+.form1__line { /* стилізували текст */
+	width: 591px;
+	height: 65px;
+	color: #37393F;
+	font-family: 'Inter';
+	font-size: 18px;
+	line-height: normal;
+
+	border: 1px solid #DDD;
+	background-color: #F8F8F8;
+
+	margin-bottom: 28px; /* задали відступи між полями */
+
+/* 	padding: 21px 457px 22px 40px; */
+}
+.form1__line:not(:last-child) {
+	margin-right: 35px;
+}
+
+
+.form2__line {
+}
+
+.form__textarea {
+	width: 100%;
+	height: 222px;
+	border: 1px solid #DDD;
+	background-color: #F8F8F8;
+}
+
+.button-submit {
+
+}
+
+
+
+
+
+
+
+
+
+/* -------------footer------------- */
+.footer {}
