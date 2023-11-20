@@ -31,10 +31,12 @@
 }
 
 /* ---header---- */
-.header {}
+/* .header {} */
+
+
 
 /* ---main---- */
-.main {}
+/* .main {} */
 
 
 /* -------page1----- */
@@ -43,8 +45,6 @@
 	margin: 0 auto;
 	text-align: center; /* для усього блоку с текстом */
 }
-
-.page1__container {}
 
 .page1__title::before {
 	width: 12px;
@@ -73,46 +73,69 @@
 }
 
 /* -------form------- */
-.form {
-}
+/* .form {} */
+
 .form1 {
 	display: flex;
 }
-.form1__line {
 
+.form1__line:not(:last-child) { /* ------прибираємо ВІДСТУПИ у осьтаннього поля вводу------- */
+	margin-right: 35px;
 }
-.form1__line { /* стилізували текст */
+
+input { /* стилізували текст */
 	width: 591px;
 	height: 65px;
 	color: #37393F;
 	font-family: 'Inter';
 	font-size: 18px;
 	line-height: normal;
+	padding-left: 40px;
 
 	border: 1px solid #DDD;
 	background-color: #F8F8F8;
 
-	margin-bottom: 28px; /* задали відступи між полями */
-
-/* 	padding: 21px 457px 22px 40px; */
+	margin-bottom: 28px; /* задали відступи між полями у низ*/	
+	
+	/*outline: 0; /* прибрали рамки навколо поля вводу */
 }
-.form1__line:not(:last-child) {
-	margin-right: 35px;
-}
-
-
-.form2__line {
+input:focus {
+	outline: 2px solid #6B77E5; /* зробили обводку рамки --focusі-- фіолетовиою */
 }
 
-.form__textarea {
+
+
+textarea {
 	width: 100%;
 	height: 222px;
+	padding-top: 22px; 	/* відступи для тексту */
+	padding-left: 40px; /* відступи для тексту */
+	color: #37393F;
+	font-family: 'Inter';
+	font-size: 18px;
+	line-height: normal;
 	border: 1px solid #DDD;
 	background-color: #F8F8F8;
+	margin-bottom: 50px; /* відступи до кнопки */
+
+	/*користувач не зможе змінювати горизонтальну ширину*/
+	resize: vertical; /* працює */
+
+	/*для айфонів*/
+	border-radius:0 !important;
 }
 
+/* КНОПКА буде ПО ЦЕНТРУ, того що  у .page1 вказали - text-align: center; /* для усього блоку с текстом */ 
 .button-submit {
-
+	padding: 21px 61px 22px 61px; /* розмір кнопки */
+	line-height: 1.22; /* висота кнопки */
+	background-color: #6B77E5;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Inter';
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
 }
 
 
@@ -124,4 +147,4 @@
 
 
 /* -------------footer------------- */
-.footer {}
+/* .footer {} */
