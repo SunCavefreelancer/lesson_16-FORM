@@ -130,18 +130,91 @@ textarea {
 	padding: 21px 61px 22px 61px; /* розмір кнопки */
 	line-height: 1.22; /* висота кнопки */
 	background-color: #6B77E5;
+	border: 1px solid transparent;
 	color: #FFF;
 	text-align: center;
 	font-family: 'Inter';
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: capitalize;
+	transition: 0.5s;
+}
+.button-submit:hover {
+	background-color: transparent;
+	border: 1px solid #6B77E5;
+	color: #6B77E5;
 }
 
 
 
+/* -------------------------------maket 2 ------------------------------------------ */
+.page2 {
+	padding: 100px 15px 100px 15px;
+	max-width: 925px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.page2__title {
+	color: #3C4242;
+	font-family: 'CoreSansC-65Bold';
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 33.5px; /* 119.643% */
+	letter-spacing: 0.56px;
+	margin-bottom: 20px;
+}
+.page2__sub-title {
+	color: #3C4242;
+	font-family: 'CoreSansC-65Bold';
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 33.5px; /* 152.273% */
+	letter-spacing: 0.44px;
+	margin-bottom: 50px;
+}
 
 
+
+/* -------form--------- */
+.form-info{
+	border: 1px solid red;
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info__line { /* ставимо в рядок <label> та <input> */
+	display: flex;
+	flex-direction: column;
+}
+.info__line-name {
+	color: #3C4242;
+	font-family: 'Causten';
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.36px;
+
+	margin-bottom: 10px; /* відступ між <label> та <input>   */
+}
+.info__line-input {
+	color: #807D7E;
+	text-align: center;
+	font-family: 'Causten';
+	font-size: 16px;
+	text-align: left;
+	padding-left: 22.3px;
+	width: 427px;
+	height: 54px;
+}
+.info-2 {
+}
+.info-2__label-textarea {
+}
+.info-2__textarea {
+}
 
 
 
