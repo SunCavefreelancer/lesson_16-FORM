@@ -70,7 +70,7 @@
 					<div class="page2__sub-title">Add Address</div>
 
 						<form id="some-form" enctype="multipart/form-data" method="GET" class="form-info info" action="#">
-							<div class="info"> <!-- 1 -->
+							<div class="info__item"> <!-- 1 -->
 									<div class="info__line">
 											<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
 											<label for="name-id" class="info__line-name">First Name*</label><!-- label - Окремий підпис поля вводу -->
@@ -85,7 +85,7 @@
 									</div>
 							</div>
 
-							<div class="info"> <!-- 2 -->
+							<div class="info__item"> <!-- 2 -->
 								<div class="info__line">
 										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
 										<label for="name-id" class="info__line-name">Country / Region*</label><!-- label - Окремий підпис поля вводу -->
@@ -100,7 +100,7 @@
 								</div>
 							</div>
 
-							<div class="info"> <!-- 3 -->
+							<div class="info__item"> <!-- 3 -->
 								<div class="info__line">
 										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
 										<label for="name-id" class="info__line-name">Street Address*</label><!-- label - Окремий підпис поля вводу -->
@@ -115,7 +115,7 @@
 								</div>
 							</div>
 
-							<div class="info"> <!-- 4 -->
+							<div class="info__item"> <!-- 4 -->
 								<div class="info__line">
 										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
 										<label for="name-id" class="info__line-name">City*</label><!-- label - Окремий підпис поля вводу -->
@@ -130,7 +130,7 @@
 								</div>
 							</div>
 
-							<div class="info"> <!-- 5 -->
+							<div class="info__item"> <!-- 5 -->
 								<div class="info__line">
 										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
 										<label for="name-id" class="info__line-name">Phone*</label><!-- label - Окремий підпис поля вводу -->
@@ -146,7 +146,7 @@
 							</div>
 
 
-							<div class="info-2">
+							<div class="info__item-2">
 								<!-- textarea - ввід багаторядкового тексту -->
 								<label  class="info-2__label-textarea" for="message">Delivery Instruction</label>
 								<textarea class="info-2__textarea" id="message" name="Message..." placeholder="Delivery Instruction"></textarea>
@@ -155,6 +155,39 @@
 
 				</div>
 			</div>
+
+
+
+
+			<!-- практика flex--- -->
+			<div class="card">
+				<div class="card__container">
+					<div class="card__column"> <!-- колонка  -->
+						<div class="card__item"> <!-- картка -->
+							<div class="card__img">
+								<img src="img/yyy.jpg" alt="image"> <!-- фото -->
+							</div>
+							<div class="card__text"> <!--flex-- оболочка для текста -->
+								<div class="card__data">
+									<div class="card__title">Financial Investment</div>
+										<div class="card__data-img"> <!-- flex -->
+											<img src="img/konvert.svg" alt="icon">
+											<p>Sep 2022</p>
+										</div>
+								</div>
+								<div class="card__icon-right">
+									<img src="img/icon.svg" alt="icon">
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
 		</main>
 		<footer class="footer"></footer>
 	</div>

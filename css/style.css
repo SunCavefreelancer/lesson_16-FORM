@@ -21,13 +21,12 @@
 	/* прижимаем футер книзу */
 }
 
-
-
 /* для усіх "__container" однаково */
 [class*="__container"] {
     max-width: 1250px; /* получилось */
     margin: 0 auto; /* получилось */
     padding: 0px 15px; /* получилось */
+	border: 1px solid rgb(195, 0, 255);
 }
 
 /* ---header---- */
@@ -182,13 +181,12 @@ textarea {
 }
 
 .info {
-	display: flex;
-	flex-wrap: wrap;
+
 }
 
-.info__line { /* ставимо в рядок <label> та <input> */
+.info__item { /* ставимо в рядок <label> та <input> */
 	display: flex;
-	flex-direction: column;
+	gap 42px;
 }
 .info__line-name {
 	color: #3C4242;
@@ -206,8 +204,8 @@ textarea {
 	font-size: 16px;
 	text-align: left;
 	padding-left: 22.3px;
-	width: 427px;
-	height: 54px;
+/* 	width: 427px;   не пишемо!
+	height: 54px;   не пишемо!*/
 }
 .info-2 {
 }
@@ -215,6 +213,98 @@ textarea {
 }
 .info-2__textarea {
 }
+
+
+
+
+
+
+
+
+
+
+/* ====================практика флекс========================= */
+.card {
+	border: 1px solid red;
+}
+.card__container {
+	border: 1px solid rgb(0, 110, 255);
+}
+.card__column { /* <!-- колонка  --> */
+	border: 1px solid rgb(0, 255, 38);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;	
+	flex: 0 1 33.333%;
+}
+.card__item { /* катрткa */
+	border: 1px solid rgb(255, 157, 0);
+	padding:  0 16px;	
+	max-width: 385px; /* для катртки задаем максимальный размер */
+	height: 100%;
+
+}
+
+
+.card__img img{
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+
+/*  <!-- оболочка для текста --> */
+/*  <!-- flex --> */
+.card__text {
+	display: flex;
+	flex: 0 1 33.333%;
+}
+/* оболочка для конверта и даты */
+.card__data {
+	flex: 1 1 346px;
+}
+.card__title {
+	color: #37393F;
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 127%; /* 25.4px */
+	margin-bottom: 10px;
+}
+
+/*  <!-- flex --> */
+.card__data-img {
+	display: flex;
+}
+
+.card__data-img img {
+	margin-right: 3.3px;
+}
+
+.card__data-img p{
+	color: #7D7D7D;
+	font-family: 'Inter';
+	font-size: 14px;
+	line-height: 146.187%; /* 20.466px */
+}
+
+/* иконка справа */
+.card__icon-right {
+	width: 38px;
+	height: 38px;
+}
+.card__icon-right img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
