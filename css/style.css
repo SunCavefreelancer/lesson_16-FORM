@@ -16,7 +16,7 @@
 	/* прижимаем футер книзу */
 }
 
-.wrapper>main {
+.wrapper > main {
 	flex-grow: 1;
 	/* прижимаем футер книзу */
 }
@@ -38,32 +38,35 @@
 /* .main {} */
 
 
-/* -------page1----- */
-.page1 {
-	padding: 50px 0px 0px 0px;
-	margin: 0 auto;
-	text-align: center; /* для усього блоку с текстом */
+/* -------section1----- */
+.section1 {
+	padding: 80px 0px;
 }
 
-.page1__title::before {
-	width: 12px;
-	height: 12px;
-	margin-right: 6px;
-	background-color: #40DDB6;
-	content: '';
-	display: inline-block;
-}
-.page1__title {
+.section1__container h2 {
 	color: #37393F;
+	justify-content: center; /* поставили по центру h2 */
 	font-family: 'Inter';
 	font-size: 18px;
 	font-weight: 500;
-	line-height: normal;
 	margin-bottom: 16px;
+	
+	display: flex; 		/* зелений квадратик */
+	gap: 6px; 			/* зелений квадратик */
+}
+.section1__container h2:before { /* зелений квадратик */
+    content: "";
+	display: inline-block;
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #40ddb6;
+    transform: translateY(3px);
 }
 
-.page1__sub-title {
+.section1__container h3 {
 	color: #37393F;
+	text-align: center;
 	font-family: 'Poppins';
 	font-size: 40px;
 	font-weight: 700;
@@ -71,239 +74,44 @@
 	margin-bottom: 40px;
 }
 
-/* -------form------- */
-/* .form {} */
-
-.form1 {
-	display: flex;
+/* ---форми--- */
+.form-section1 {
 }
 
-.form1__line:not(:last-child) { /* ------прибираємо ВІДСТУПИ у осьтаннього поля вводу------- */
-	margin-right: 35px;
-}
-
-input { /* стилізували текст */
-	width: 591px;
-	height: 65px;
-	color: #37393F;
-	font-family: 'Inter';
-	font-size: 18px;
-	line-height: normal;
-	padding-left: 40px;
+/* ---input-- */
+.form-section1__item {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 50%;
+	padding: 0px 17.5px;
+	min-width: 290px;
 
 	border: 1px solid #DDD;
 	background-color: #F8F8F8;
-
-	margin-bottom: 28px; /* задали відступи між полями у низ*/	
-	
-	/*outline: 0; /* прибрали рамки навколо поля вводу */
-}
-input:focus {
-	outline: 2px solid #6B77E5; /* зробили обводку рамки --focusі-- фіолетовиою */
-}
-
-
-
-textarea {
-	width: 100%;
-	height: 222px;
-	padding-top: 22px; 	/* відступи для тексту */
-	padding-left: 40px; /* відступи для тексту */
+	display: flex;
+	column-gap: 35px;
+	row-gap: 28px;			
+	width: 100%;	
+	padding: 21px 40px 20px;
 	color: #37393F;
 	font-family: 'Inter';
 	font-size: 18px;
-	line-height: normal;
-	border: 1px solid #DDD;
-	background-color: #F8F8F8;
-	margin-bottom: 50px; /* відступи до кнопки */
-
-	/*користувач не зможе змінювати горизонтальну ширину*/
-	resize: vertical; /* працює */
-
-	/*для айфонів*/
-	border-radius:0 !important;
 }
-
-/* КНОПКА буде ПО ЦЕНТРУ, того що  у .page1 вказали - text-align: center; /* для усього блоку с текстом */ 
-.button-submit {
-	padding: 21px 61px 22px 61px; /* розмір кнопки */
-	line-height: 1.22; /* висота кнопки */
-	background-color: #6B77E5;
-	border: 1px solid transparent;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Inter';
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: capitalize;
-	transition: 0.5s;
-}
-.button-submit:hover {
-	background-color: transparent;
-	border: 1px solid #6B77E5;
-	color: #6B77E5;
-}
-
-
-
-/* -------------------------------maket 2 ------------------------------------------ */
-.page2 {
-	padding: 100px 15px 100px 15px;
-	max-width: 925px;
-	margin: 0 auto;
-	border: 1px solid red;
-}
-
-.page2__title {
-	color: #3C4242;
-	font-family: 'CoreSansC-65Bold';
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 33.5px; /* 119.643% */
-	letter-spacing: 0.56px;
-	margin-bottom: 20px;
-}
-.page2__sub-title {
-	color: #3C4242;
-	font-family: 'CoreSansC-65Bold';
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 33.5px; /* 152.273% */
-	letter-spacing: 0.44px;
-	margin-bottom: 50px;
-}
-
-
-
-/* -------form--------- */
-.form-info{
-	border: 1px solid red;
-}
-
-.info {
-
-}
-
-.info__item { /* ставимо в рядок <label> та <input> */
-	display: flex;
-	gap 42px;
-}
-.info__line-name {
-	color: #3C4242;
-	font-family: 'Causten';
-	font-size: 18px;
-	font-weight: 600;
-	letter-spacing: 0.36px;
-
-	margin-bottom: 10px; /* відступ між <label> та <input>   */
-}
-.info__line-input {
-	color: #807D7E;
-	text-align: center;
-	font-family: 'Causten';
-	font-size: 16px;
-	text-align: left;
-	padding-left: 22.3px;
-/* 	width: 427px;   не пишемо!
-	height: 54px;   не пишемо!*/
-}
-.info-2 {
-}
-.info-2__label-textarea {
-}
-.info-2__textarea {
-}
-
-
-
-
-
-
-
-
-
-
-/* ====================практика флекс========================= */
-.card {
-	border: 1px solid red;
-}
-.card__container {
-	border: 1px solid rgb(0, 110, 255);
-}
-.card__column { /* <!-- колонка  --> */
-	border: 1px solid rgb(0, 255, 38);
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -16px;	
-	flex: 0 1 33.333%;
-}
-.card__item { /* катрткa */
-	border: 1px solid rgb(255, 157, 0);
-	padding:  0 16px;	
-	max-width: 385px; /* для катртки задаем максимальный размер */
-	height: 100%;
-
-}
-
-
-.card__img img{
-	margin-bottom: 24px;
-	max-width: 100%;
-}
-
-/*  <!-- оболочка для текста --> */
-/*  <!-- flex --> */
-.card__text {
-	display: flex;
-	flex: 0 1 33.333%;
-}
-/* оболочка для конверта и даты */
-.card__data {
-	flex: 1 1 346px;
-}
-.card__title {
+input{
 	color: #37393F;
-	font-family: 'Poppins';
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 127%; /* 25.4px */
-	margin-bottom: 10px;
-}
-
-/*  <!-- flex --> */
-.card__data-img {
-	display: flex;
-}
-
-.card__data-img img {
-	margin-right: 3.3px;
-}
-
-.card__data-img p{
-	color: #7D7D7D;
 	font-family: 'Inter';
-	font-size: 14px;
-	line-height: 146.187%; /* 20.466px */
+	font-size: 18px;
+}
+.form-section1__item, input {
+
 }
 
-/* иконка справа */
-.card__icon-right {
-	width: 38px;
-	height: 38px;
+/* ---textarea-- */
+.form-section1__input--textarea {
 }
-.card__icon-right img {
-	max-width: 100%;
+.form-section1__button {
 }
-
-
-
-
-
-
-
-
-
-
+/* -------section1----- */
 
 
 

@@ -13,176 +13,40 @@
 	<div class="wrapper">
 		<header class="header"></header>
 		<main class="main">
-			<div class="page1">
-				<div class="page1__container">
-					<div class="page1__title">Contact Us</div>
-					<div class="page1__sub-title">Request A Call Back !</div>
-					
-						<form id="some-form" enctype="multipart/form-data" method="GET" class="form" action="#">
-							<div class="form1">
-									<div class="form1__line">
-										<!-- label - Окремий підпис поля вводу -->
-										<!-- Рядковий тег  -->
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -->
-										<!-- <label for="some-id">Your Name</label> -->
-										<input id="some-id" autocomplete="off" name="name" placeholder="Your Name" type="text">
-									</div>
 
-									<div class="form1__line">
-										<!-- Тип email - Однорядковий ввід поштової адреси -->
-										<!-- <label for="mail">Email Address</label> -->
-										<input id="mail" name="mail" placeholder="Email Address" type="email">
-									</div>			
-							</div>
-
-
-							<div class="form1">
-								<div class="form1__line">
-									<!-- Тип tel - поле вводу телефонного номеру -->
-										<!-- <label for="phone">Phone Number</label> -->
-										<input id="phone" autocomplete="off" name="phone" placeholder="Phone Number" type="tel">
-								</div>
-
-								<div class="form1__line">
-										<!-- <label for="mail">Subject</label> -->
-										<input id="mail" name="mail" placeholder="Subject" type="email">
-								</div>			
-							</div>
-
-
-							<div class="form2__line">
-								<!-- textarea - ввід багаторядкового тексту -->
-								<!-- <label for="message">Ваше повідомлення</label> -->
-								<textarea class="form__textarea" id="message" name="Message..." placeholder="Message..."></textarea>
-							</div>
-
-							<!-- type="submit" - відправляє форму. Має знаходитить в середені тегу form. -->
-							<button form="some-form" type="submit" class="button-submit">submit</button>
-						</form>
-
-				</div>
-			</div>
-
-
-			<div class="page2">
-				<div class="page2__container">
-					<div class="page2__title">My Info</div>
-					<div class="page2__sub-title">Add Address</div>
-
-						<form id="some-form" enctype="multipart/form-data" method="GET" class="form-info info" action="#">
-							<div class="info__item"> <!-- 1 -->
-									<div class="info__line">
-											<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-											<label for="name-id" class="info__line-name">First Name*</label><!-- label - Окремий підпис поля вводу -->
-											<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="First Name*" type="text">
-									</div>
-
-
-									<div class="info__line">
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-										<label for="name-id" class="info__line-name">Last Name*</label><!-- label - Окремий підпис поля вводу -->
-										<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Last Name*" type="text">
-									</div>
-							</div>
-
-							<div class="info__item"> <!-- 2 -->
-								<div class="info__line">
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-										<label for="name-id" class="info__line-name">Country / Region*</label><!-- label - Окремий підпис поля вводу -->
-										<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Country / Region" type="text">
-								</div>
-
-
-								<div class="info__line">
-									<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-									<label for="name-id" class="info__line-name">Company Name</label><!-- label - Окремий підпис поля вводу -->
-									<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Company (optional)" type="text">
-								</div>
-							</div>
-
-							<div class="info__item"> <!-- 3 -->
-								<div class="info__line">
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-										<label for="name-id" class="info__line-name">Street Address*</label><!-- label - Окремий підпис поля вводу -->
-										<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="House number and street name" type="text">
-								</div>
-
-
-								<div class="info__line">
-									<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-									<label for="name-id" class="info__line-name">Apt, suite, unit</label><!-- label - Окремий підпис поля вводу -->
-									<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="apartment, suite, unit, etc. (optional)" type="text">
-								</div>
-							</div>
-
-							<div class="info__item"> <!-- 4 -->
-								<div class="info__line">
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-										<label for="name-id" class="info__line-name">City*</label><!-- label - Окремий підпис поля вводу -->
-										<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Town / City" type="text">
-								</div>
-
-
-								<div class="info__line">
-									<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-									<label for="name-id" class="info__line-name">State*</label><!-- label - Окремий підпис поля вводу -->
-									<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="State" type="text">
-								</div>
-							</div>
-
-							<div class="info__item"> <!-- 5 -->
-								<div class="info__line">
-										<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-										<label for="name-id" class="info__line-name">Phone*</label><!-- label - Окремий підпис поля вводу -->
-										<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Phone" type="text">
-								</div>
-
-
-								<div class="info__line">
-									<!-- Атрибут for - вказуємо ID поля з яким хочемо з'вязати label -Рядковий тег-->
-									<label for="name-id" class="info__line-name">Postal Code*</label><!-- label - Окремий підпис поля вводу -->
-									<input id="name-id" class="info__line-input" autocomplete="off" name="name" placeholder="Postal Code" type="text">
-								</div>
-							</div>
-
-
-							<div class="info__item-2">
-								<!-- textarea - ввід багаторядкового тексту -->
-								<label  class="info-2__label-textarea" for="message">Delivery Instruction</label>
-								<textarea class="info-2__textarea" id="message" name="Message..." placeholder="Delivery Instruction"></textarea>
-							</div>
-						</form>
-
-				</div>
-			</div>
-
-
-
-
-			<!-- практика flex--- -->
-			<div class="card">
-				<div class="card__container">
-					<div class="card__column"> <!-- колонка  -->
-						<div class="card__item"> <!-- картка -->
-							<div class="card__img">
-								<img src="img/yyy.jpg" alt="image"> <!-- фото -->
-							</div>
-							<div class="card__text"> <!--flex-- оболочка для текста -->
-								<div class="card__data">
-									<div class="card__title">Financial Investment</div>
-										<div class="card__data-img"> <!-- flex -->
-											<img src="img/konvert.svg" alt="icon">
-											<p>Sep 2022</p>
-										</div>
-								</div>
-								<div class="card__icon-right">
-									<img src="img/icon.svg" alt="icon">
-								</div>	
-							</div>
+		<section class="section1">
+			<div class="section1__container">
+				<h2>Contact Us</h2>
+				<h3>Request A Call Back !</h3>
+				<form id="some-form" enctype="multipart/form-data" method="GET" class="form-section1" action="#">
+					<div class="form-section1__body">
+						<div class="form-section1__item">
+							<input class="form-section1__input" autocomplete="off" name="name" placeholder="Your Name" value type="text">
 						</div>
-					</div>
-				</div>
+						<div class="form-section1__item">
+							<input class="form-section1__input" autocomplete="off" name="mail" placeholder="Email Address" value type="email">
+						</div>
+						<div class="form-section1__item">
+							<input class="form-section1__input" autocomplete="off" name="phone" placeholder="Phone Number" value type="tell">
+						</div>
+						<div class="form-section1__item">
+							<input class="form-section1__input" autocomplete="off" name="name" placeholder="Subject" value type="text">
+						</div>
+						<div class="form-section1__item">
+							<input class="form-section1__input form-section1__input--textarea" autocomplete="off" name="message" placeholder="Message...">
+						</div>
+					</div>	
+						<button class="form-section1__button" type="submit">Submit</button>
+				</form>
 			</div>
+		</section>
+
+
+
+
+
+
+
 
 
 
